@@ -1,0 +1,30 @@
+﻿<Window x:Class="MemoryGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Load Data" Click="LoadData_Click" Margin="5"/>
+            <Button Content="Add User" Click="AddUser_Click" Margin="5"/>
+        </StackPanel>
+        <ListView x:Name="LoginsListView" Grid.Row="1" Margin="10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="User ID" DisplayMemberBinding="{Binding UserId}" Width="100"/>
+                    <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" Width="200"/>
+                    <GridViewColumn Header="Password" DisplayMemberBinding="{Binding Password}" Width="200"/>
+                    <!-- Added Password column -->
+                    <GridViewColumn Header="Stage ID" DisplayMemberBinding="{Binding StageId}" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
