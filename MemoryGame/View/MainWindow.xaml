@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -21,10 +21,10 @@
                     <GridViewColumn Header="User ID" DisplayMemberBinding="{Binding UserId}" Width="100"/>
                     <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" Width="200"/>
                     <GridViewColumn Header="Password" DisplayMemberBinding="{Binding Password}" Width="200"/>
-                    <!-- Added Password column -->
+                    Added Password column
                     <GridViewColumn Header="Stage ID" DisplayMemberBinding="{Binding StageId}" Width="100"/>
                 </GridView>
             </ListView.View>
-        </ListView>
+        </ListView>-->
     </Grid>
 </Window>

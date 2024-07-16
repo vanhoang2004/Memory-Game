@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Asset\Capoo\capoo1.gif" />
+    <None Remove="Asset\Capoo\capoo10.gif" />
+    <None Remove="Asset\Capoo\capoo11.png" />
+    <None Remove="Asset\Capoo\capoo12.png" />
+    <None Remove="Asset\Capoo\capoo13.gif" />
+    <None Remove="Asset\Capoo\capoo14.gif" />
+    <None Remove="Asset\Capoo\capoo15.gif" />
     <None Remove="Asset\Capoo\capoo2.gif" />
     <None Remove="Asset\Capoo\capoo3.png" />
     <None Remove="Asset\Capoo\capoo4.png" />
@@ -17,6 +24,25 @@
     <None Remove="Asset\Capoo\capoo7.gif" />
     <None Remove="Asset\Capoo\capoo8.png" />
     <None Remove="Asset\Capoo\capoo9.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu1.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu10.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu11.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu12.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu13.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu14.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu15.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu2.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu3.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu4.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu5.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu6.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu7.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu8.jpg" />
+    <None Remove="Asset\Jujutsu\jujutsu9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Asset\Jujutsu\jujutsu4.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +55,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Asset\Capoo\capoo1.gif" />
+    <Resource Include="Asset\Capoo\capoo10.gif" />
+    <Resource Include="Asset\Capoo\capoo11.png" />
+    <Resource Include="Asset\Capoo\capoo12.png" />
+    <Resource Include="Asset\Capoo\capoo13.gif" />
+    <Resource Include="Asset\Capoo\capoo14.gif" />
+    <Resource Include="Asset\Capoo\capoo15.gif" />
     <Resource Include="Asset\Capoo\capoo2.gif">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -53,6 +86,20 @@
     <Resource Include="Asset\Capoo\capoo9.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Asset\Jujutsu\jujutsu1.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu10.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu11.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu12.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu13.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu14.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu15.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu2.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu3.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu5.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu6.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu7.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu8.jpg" />
+    <Resource Include="Asset\Jujutsu\jujutsu9.jpg" />
   </ItemGroup>
 
 </Project>

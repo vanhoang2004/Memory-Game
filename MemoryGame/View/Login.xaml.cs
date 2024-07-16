@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MemoryGame.DAL;
+using MemoryGame.Service;
 
 namespace MemoryGame.View
 {
@@ -20,6 +21,7 @@ namespace MemoryGame.View
     /// </summary>
     public partial class Login : Window
     {
+        private readonly LoginService _loginService;
         public Login()
         {
             InitializeComponent();
@@ -46,12 +48,11 @@ namespace MemoryGame.View
 
         private bool AuthenticateUser(string username, string password, out int userStageId)
         {
-            using (var context = new MemoryGameContext())
-            {
+            var logins = _loginService.GetAllUser();
                 // Hash the password if you are storing hashed passwords
                 var hashedPassword = password; // This should be replaced with actual password hashing logic
 
-                var user = context.Logins
+            var user = logins
                     .FirstOrDefault(u => u.Username == username && u.Password == hashedPassword);
 
                 if(user != null)
@@ -65,7 +66,7 @@ namespace MemoryGame.View
                     userStageId = 0;
                     return false;
                 }
-            }
+            
         }
     }
     

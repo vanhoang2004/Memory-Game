@@ -8,9 +8,9 @@ using System.Windows.Threading;
 
 namespace MemoryGame.View
 {
-    public partial class CapooLevelWindow : Window
+    public partial class Level2Window : Window
     {
-        private List<string> imagePaths = new List<string>
+        private List<string> imagePaths1 = new List<string>
         {
             "pack://application:,,,/MemoryGame;component/Asset/Capoo/capoo2.gif",
             "pack://application:,,,/MemoryGame;component/Asset/Capoo/capoo3.png",
@@ -22,11 +22,23 @@ namespace MemoryGame.View
             "pack://application:,,,/MemoryGame;component/Asset/Capoo/capoo9.jpg"
         };
 
+        private List<string> imagePaths = new List<string>
+        {
+            "pack://application:,,,/MemoryGame;component/Asset/Jujutsu/jujutsu1.jpg",
+            "pack://application:,,,/MemoryGame;component/Asset/Jujutsu/jujutsu14.jpg",
+            "pack://application:,,,/MemoryGame;component/Asset/Jujutsu/jujutsu3.jpg",
+            "pack://application:,,,/MemoryGame;component/Asset/Jujutsu/jujutsu4.jpg",
+            "pack://application:,,,/MemoryGame;component/Asset/Jujutsu/jujutsu5.jpg",
+            "pack://application:,,,/MemoryGame;component/Asset/Jujutsu/jujutsu6.jpg",
+            "pack://application:,,,/MemoryGame;component/Asset/Jujutsu/jujutsu7.jpg",
+            "pack://application:,,,/MemoryGame;component/Asset/Jujutsu/jujutsu8.jpg"
+        };
+
         private List<Button> buttons;
         private Button firstClick, secondClick;
         private DispatcherTimer timer;
 
-        public CapooLevelWindow()
+        public Level2Window()
         {
             InitializeComponent();
             InitializeGameBoard();

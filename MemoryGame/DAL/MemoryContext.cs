@@ -5,6 +5,21 @@ namespace MemoryGame.DAL
 {
     public class MemoryGameContext : DbContext
     {
+        private static MemoryGameContext _instance;
+        public static MemoryGameContext Instance()
+        {
+            if (_instance == null)
+                _instance = new MemoryGameContext();
+            return _instance;
+        }
+        public MemoryGameContext()
+        {
+        }
+
+        public MemoryGameContext(DbContextOptions<MemoryGameContext> options)
+            : base(options)
+        {
+        }
         public DbSet<Login> Logins { get; set; }
         public DbSet<Level> Levels { get; set; }
         public DbSet<Stage> Stages { get; set; }

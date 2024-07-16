@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MemoryGame.DAL;
 using MemoryGame.Models;
+using MemoryGame.Service;
 
 namespace MemoryGame.View
 {
@@ -22,17 +23,18 @@ namespace MemoryGame.View
     public partial class LevelWindow : Window
     {
         private int _stageId;
+        private readonly LevelSevice _levelService;
+
         public LevelWindow(int stageId)
         {
             InitializeComponent();
             _stageId = stageId;
+            
             LoadStages();
         }
         private void LoadStages()
         {
-            using (var context = new MemoryGameContext())
-            {
-                var levels = context.Levels.ToList();
+                var levels = _levelService.GetAllLevel().ToList();
 
                 // Clear existing buttons if needed
                 LevelPanel.Children.Clear();
@@ -50,7 +52,7 @@ namespace MemoryGame.View
                     button.Click += LevelButton_Click;
 
                     LevelPanel.Children.Add(button);
-                }
+                
             }
         }
 
@@ -67,7 +69,7 @@ namespace MemoryGame.View
                         easy.Show();
                         break;
                     case 2:
-                        var capoo = new CapooLevelWindow();
+                        var capoo = new Level2Window();
                         capoo.Show();
                         break;
                 }
